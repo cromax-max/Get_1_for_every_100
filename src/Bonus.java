@@ -4,12 +4,11 @@ public class Bonus {
         int amount = 1790;
         int bonus;
 
+        account += amount;
         if (amount > 1000) {
             bonus = (amount - 1000) / 100;
-            account += amount;
         } else {
             bonus = 0;
-            account += amount;
         }
         System.out.println("Счет: " + account);
         System.out.println("Бонус: " + bonus);
